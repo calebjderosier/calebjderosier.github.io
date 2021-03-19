@@ -9,7 +9,7 @@
     },
     {
         "title": "My portfolio site",
-        "body": "<div className=App><header className=App-header><p className=notes-text>Notes</p>",
+        "body": " <div id=app-container><div className=app-header main>",
         "date": "Mar 17, 2021, 21:08",
         "imgType": "code",
         "tags": ["Meta"],
@@ -20,7 +20,7 @@
         "body": "Phở or pho is a Vietnamese soup consisting of broth, rice noodles, herbs, and meat, sometimes chicken.",
         "date": "Mar 14, 2021, 11:23",
         "imgType": "list",
-        "tags": [],
+        "tags": ["Three", "Tag", "Test"],
         "isLocked": false
     },
     {
@@ -44,12 +44,12 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "date": "Mar 12, 2017, 09:45",
         "imgType": "list",
-        "tags": ["Three", "Tag", "Test"],
+        "tags": ["Now", "Four", "Tag", "Test"],
         "isLocked": true
     },
     {
-        "title": "Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not.",
-        "body": "It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life…He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.",
+        "title": "Did you ever hear the tragedy of Darth Plagueis The Wise?",
+        "body": "I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life…He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.",
         "date": "Jul 23, 2014, 19:23",
         "imgType": "",
         "tags": ["Midichlorians"],
@@ -57,7 +57,7 @@
     },
     {
         "title": "BROCKHAMPTON",
-        "body": "Brockhampton is America's favorite boyband (and also mine)",
+        "body": "Brockhampton is America's greatest boyband",
         "date": "Feb 14, 2000, 10:10 pm",
         "imgType": "calendar",
         "tags": [],

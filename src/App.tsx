@@ -23,7 +23,7 @@ function App() {
 
   function handleSelect(e:any, i:number) {
     e.preventDefault();
-    if (e.cmdKey||e.metaKey) { // metakey to account for cmd on Mac OS
+    if (e.ctrlKey||e.metaKey) { // metakey to account for cmd on Mac OS
       setAnimation(1);
       if (selectedTilesArr.includes(i)) {
         setSelectedTilesArr(selectedTilesArr.filter((x) => x !== i));
