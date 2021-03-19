@@ -29,6 +29,17 @@ p {
   line-height: 14px;
 }
 
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
 .divider-line {
   height: 1px;
   background: #DFE1E4;

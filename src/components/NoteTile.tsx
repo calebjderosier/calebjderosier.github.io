@@ -20,38 +20,38 @@ interface Note {
 
 function NoteTile(note:Note, isSelected:boolean) {
     // get the imported image corresponding to the appropriate type
-    function getImgSrc(imgType:string) {
+    function getNoteIcon(imgType:string) {
         switch (imgType) {
-            case 'calendar': return calendar;
-            case 'clock': return clock;
-            case 'code': return code;
-            case 'list': return list;
-            default: return imageList;
+            case 'calendar': return <img src={calendar} className="square-note-icon" alt="note-icon"/>;
+            case 'clock': return <img src={clock} className="square-note-icon" alt="note-icon"/>;
+            case 'code': return <img src={code} className="rct-note-icon" alt="note-icon"/>;
+            case 'list': return <img src={list} className="rct-note-icon" alt="note-icon"/>;
+            default: return <img src={imageList} className="rct-note-icon" alt="note-icon"/>;
         }
     }
 
     // check if date string corresponds to today's date
     // not implemented yet because parsing dates is the absolute worst 
     function getDate(date:string) {
-        if (date) return <p className="date-text">{note.date}</p>;
+        if (date) return <p id="date-text">{note.date}</p>;
         else return null;
     }
 
     return (
-        <div className={isSelected ? "note-tile selected" : "note-tile"}>
-            <div className="note-icon-container">
-                <img src={getImgSrc(note.imgType)} className="note-img" alt="note-icon"/>
+        <div className={"note-tile"+(isSelected?" selected":"")}>
+            <div id="note-icon-container">
+                {getNoteIcon(note.imgType)}
             </div>
 
-            <div className="note-container">
-                <div className="content-container">
-                    <div className="title-container">
-                        <h3 className="note-title">{note.title}</h3>
+            <div id="note-container">
+                <div id="content-container">
+                    <div id="title-container">
+                        <h3 id="note-title">{note.title}</h3>
                         {note.isLocked&&<img src={lock} className="lock-img" alt="locked-icon"/>}
                     </div>
-                    {note.body&&<h6 className="note-body">{note.body}</h6>}
+                    {note.body&&<h6 id="note-body">{note.body}</h6>}
                     {getDate(note.date)}
-                    <div className="tags-container">
+                    <div id="tags-container">
                         {note.tags&&note.tags.map((tag, i) => {
                             return <div className="tag-item" key={i}>
                                 <img src={pound} className="pound-img" alt="pound-sign"/>
