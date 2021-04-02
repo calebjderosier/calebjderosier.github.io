@@ -20,4 +20,4 @@ You are also free to take any creative liberties as you so choose to improve the
 
 The final deliverable should be a GitHub link and a GitHub pages link (or similar) with the live result.
 
-[Photo of spec available in /src/ui_spec.png]
+[`Photo of UI spec`](/ui_spec.png)
